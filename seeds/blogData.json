@@ -1,17 +1,7 @@
 [
   {
-    "name": "",
-    "subject": "",
-    "information": ""
-  },
-  {
-    "name": "",
-    "subject": "",
-    "information": ""
-  },
-  {
-    "name": "",
-    "subject": "",
-    "information": ""
+    "name": "MVC",
+    "subject": "What is MVC?",
+    "information": "MVC stands for model-view-controller. It is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected elements."
   }
 ]

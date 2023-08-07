@@ -1,13 +1,19 @@
 [
     {
-    "body": "Great Post"
+        "comment_text": "No way!",
+        "user_id": 2,
+        "post_id": 3
+        
     },
-  
     {
-    "body": "Interesting Read"
+        "comment_text": "First Comment :)",
+        "user_id": 2,
+        "post_id": 5
+        
     },
     {
-    "body": "looking forward to more"
+        "comment_text": "Is this believable?",
+        "user_id": 4,
+        "post_id": 1
     }
-  ]
-  
+]

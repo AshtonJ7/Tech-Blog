@@ -6,7 +6,11 @@ router.get('/', async (req, res) => {
   try {
     // Get all blogs and JOIN with user data
     const blogData = await Blog.findAll({
-      include: [{  model: Comment }, { model: User }], 
+      include: [{  
+        model: Comment }, { model: User,
+        attributes: ['name'],
+      },
+    ], 
     });
 
     // Serialize data so the template can read it
@@ -25,7 +29,10 @@ router.get('/', async (req, res) => {
 router.get('/blog/:id', async (req, res) => {
   try {
     const blogData = await Blog.findByPk(req.params.id, {
-      include: [{  model: Comment }, { model: User }],
+      include: [{  model: Comment }, { model: User,
+        attributes: ['name'],
+       },
+      ],
     });
 
     const blog = blogData.get({ plain: true });

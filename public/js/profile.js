@@ -1,47 +1,32 @@
-const newFormHandler = async (event) => {
+async function commentFormHandler(event) {
   event.preventDefault();
 
-  const name = document.querySelector('#blog-name').value.trim();
-  const subject = document.querySelector('#blog-subject').value.trim();
-  const information = document.querySelector('#blog-info').value.trim();
+  const comment_text = document.querySelector('input[name="comment-body"]').value.trim();
 
-  if (name && subject && information) {
-    const response = await fetch(`/api/blogs`, {
-      method: 'POST',
-      body: JSON.stringify({ name, subject, information }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+  const post_id = window.location.toString().split('/')[
+      window.location.toString().split('/').length - 1
+  ];
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to create blog');
-    }
+  if (comment_text) {
+      const response = await fetch('/api/comments', {
+          method: 'POST',
+          body: JSON.stringify({
+              post_id,
+              comment_text
+          }),
+          headers: {
+              'Content-Type': 'application/json'
+          }
+      });
+
+      if (response.ok) {
+          document.location.reload();
+
+      } else {
+          alert(response.statusText);
+          document.querySelector('#comment-form').style.display = "block";
+      }
   }
-};
+}
 
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-
-    const response = await fetch(`/api/blogs/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete blog');
-    }
-  }
-};
-
-document
-  .querySelector('.new-blog-form')
-  .addEventListener('submit', newFormHandler);
-
-document
-  .querySelector('.blog-list')
-  .addEventListener('click', delButtonHandler);
+document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);

@@ -7,13 +7,12 @@
   "license": "ISC",
   "engines": {
     "node": "19.2.0",
-    "npm": "9.8.1"
+    "npm": "9.8.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seed": "node seeds/seed.js",
-    "build":"webpack"
+    "seed": "node seeds/seed.js"
   },
   "keywords": [],
   "dependencies": {

@@ -1,5 +1,15 @@
-header {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
+}
+
+.wrapper{
+  max-width: 1200px;
 }
 
 .no-button {
@@ -17,8 +27,179 @@ header {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
+.title:link{
+  color: #49c5b6;
+  text-decoration: none;
   font-weight: bold;
-  margin-left: -5px;
+}
+
+.title:visited{
+  color: #49c5b6;
+  text-decoration: none;
+}
+
+.title:hover{
+  color: #49c5b6;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  font-size: 1.5em;
+  
+  
+}
+
+.navbar a{
+  text-decoration: none;
+  margin: 0 5px;
+  color: #49c5b6
+}
+
+.navbar a:visited{
+  text-decoration: none;
+  color: #49c5b6;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+  color: #49c5b6;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+.post{
+  margin: 20px 0;
+  border: 1px grey;
+  text-align: right;
+}
+
+.post-title{
+  background-color: grey;
+  padding: 15px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.post-title a:link{
+  color: black;
+  text-decoration: none;
+}
+
+.post-title a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+.post-title a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.post-content{
+  padding: 10px !important;
+  text-align: left !important;
+}
+
+.post-button{
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.post-author{
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.post-username{
+  font-weight: bold;
+}
+
+.dashboard-container{
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer-margin{
+  margin-top: 50px;
+}
+
+.form-row{
+  margin-bottom: 20px;
+}
+
+.signup{
+  margin-top: 20px;
+}
+
+.signup-form div{
+  margin-bottom: 20px;
+}
+
+.login-form div{
+  margin-bottom: 20px;
+}
+
+.edit-post-form{
+  margin-top: 20px;
+}
+
+.edit-post-form div{
+  margin-bottom: 20px;
+}
+
+.register{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.single-post-container{
+  margin-top: 20px;
+}
+
+.comment-container{
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px #d3d3d3 solid;
+  border-radius: 10px;
+}
+
+.comment-button{
+  margin-top: 20px;
+}
+
+.comment-text{
+  padding: 10px;
+}
+
+.comment-author{
+  padding: 10px;
+  font-weight: bold;
+}
+
+#signup button{
+  background-color: #49c5b6;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.dashboard-post{
+  border: 1px #d3d3d3 solid;
+}
+
+.new-post-button{
+  background-color: #49c5b6;
+  margin: 20px 0;
+  color: white;
 }

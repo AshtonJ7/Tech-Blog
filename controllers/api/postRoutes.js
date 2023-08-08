@@ -14,6 +14,11 @@ router.get('/', (req, res) => {
             order: [
                 ['created_at', 'DESC']
             ],
+            include: [{
+                    model: User,
+                    attributes: ['username']
+                },
+            ]
         })
         .then(dbPostData => res.json(dbPostData.reverse()))
         .catch(err => {

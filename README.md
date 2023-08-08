@@ -1,4 +1,4 @@
-# Tech-Blog
+# Tech Blog
 
 This is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This app was built following the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
@@ -46,4 +46,53 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
+```
+## Tech Stack
+
+**Server:** Node, Express, MySQL database, MySQL2, Sequelize, dotenv
+
+**API:** Google Books API
+
+- HTML
+- CSS
+- webpack
+- Javascript
+- Handlebars.js as template engine
+- express-handlebars
+- bcrypt
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/AshtonJ7/Tech-Blog.git
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Set up My SQL
+
+```MYSQL
+- mysql -u root -p
+- Enter mySQL password
+- source db/schema.sql
+- QUIT
+```
+
+Database Seeding 
+
+```Seed
+node seeds/seeds.js
+```
+
+Start the server
+
+```bash
+  npm run start
 ```

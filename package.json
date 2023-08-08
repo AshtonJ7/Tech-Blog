@@ -6,12 +6,11 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "start": "node server.js",
-    "node": "19.2.0"
+    "node": "^19.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "seed": "node seeds/seed.js"
   },
   "keywords": [],

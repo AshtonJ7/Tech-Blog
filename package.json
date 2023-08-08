@@ -6,6 +6,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
+    "start": "node server.js",
     "node": "19.2.0"
   },
   "scripts": {

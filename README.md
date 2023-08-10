@@ -94,7 +94,7 @@ Start the server
   npm run start
 ```
 ## Screenshot
-![image](https://github.com/AshtonJ7/Tech-Blog/assets/62944042/c0ff2412-a2d4-4260-a9a3-47cdf3a77579)
+![image](https://github.com/AshtonJ7/Tech-Corner/assets/62944042/b9987124-6d70-42cd-a2db-f2ab438cefa0)
 
 ## Link
 

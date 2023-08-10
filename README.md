@@ -96,3 +96,9 @@ Start the server
 ```bash
   npm run start
 ```
+## Screenshot
+![image](https://github.com/AshtonJ7/Tech-Blog/assets/62944042/c0ff2412-a2d4-4260-a9a3-47cdf3a77579)
+
+## Link
+
+https://techcorner-08815f2a7b06.herokuapp.com/

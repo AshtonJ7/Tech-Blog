@@ -51,11 +51,8 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 **Server:** Node, Express, MySQL database, MySQL2, Sequelize, dotenv
 
-**API:** Google Books API
-
 - HTML
 - CSS
-- webpack
 - Javascript
 - Handlebars.js as template engine
 - express-handlebars
